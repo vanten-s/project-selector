@@ -2,7 +2,7 @@
 use termion;
 use termion::event::{Key, Event};
 use termion::input::{TermRead, MouseTerminal};
-use termion::raw::{IntoRawMode};
+use termion::raw::IntoRawMode;
 use std::io::{Write, stdout, stdin};
 use std::fs;
 
@@ -61,7 +61,6 @@ fn main()
         let evt = c.unwrap();
         match evt {
             Event::Key(Key::Backspace) => { 
-                println!("Backspace!");
                 _ = needle.pop(); 
                 res = search(&needle);
                 wr(&needle, res);
