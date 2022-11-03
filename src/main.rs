@@ -38,7 +38,7 @@ fn wr (needle: &str, haystack: Vec<String>)
         i += 1;
     }    
     
-    _ = write!(stdout, "{}", termion::cursor::Goto(1, 1));
+    _ = write!(stdout, "{}", termion::cursor::Goto((needle.len() as u16) + 1, 1));
 
     _ = stdout.flush();
 }
