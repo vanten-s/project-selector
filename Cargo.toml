@@ -7,4 +7,6 @@ edition = "2021"
 
 [dependencies]
 termion = "2.0.1"
+dirs    = "4.0.0"
+json    = "0.12.4"
 
