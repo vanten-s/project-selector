@@ -73,6 +73,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "project-selector"
+version = "0.1.0"
+dependencies = [
+ "dirs",
+ "json",
+ "termion",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -108,15 +117,6 @@ dependencies = [
  "getrandom",
  "redox_syscall",
  "thiserror",
-]
-
-[[package]]
-name = "rust_learning"
-version = "0.1.0"
-dependencies = [
- "dirs",
- "json",
- "termion",
 ]
 
 [[package]]
