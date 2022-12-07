@@ -25,4 +25,12 @@ To launch run
 project-selector $PPID
 ```
 
-I personally prefer to put this in an alias
+I personally prefer to put this in an alias with
+
+```bash
+alias s='project-selector $PPID'
+```
+
+In my .bashrc and .zshrc
+
+If you are running FISH or any other non-posix compliant shells then good luck
