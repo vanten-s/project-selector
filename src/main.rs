@@ -50,7 +50,7 @@ fn wr (needle: &str, haystack: Vec<String>, j: &i32)
         if i32::from(i) != j.to_owned() {
             _ = write!(stdout, "{}{}{}", color::Fg(color::Reset), color::Bg(color::Reset), hay);
         } else {
-            _ = write!(stdout, "{}{}{}", color::Bg(color::Blue), color::Fg(color::Black), hay);
+            _ = write!(stdout, "{}{}{}{}{}", color::Bg(color::Blue), color::Fg(color::Black), hay, color::Fg(color::Reset), color::Bg(color::Reset));
         }
         i += 1;
     }    
